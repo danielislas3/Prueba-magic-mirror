@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Card, Col, Row } from "antd";
-import ApiFetch from "../services/ApiClass";
-import NavBar from "./NavBar";
+import ApiFetch from "../../services/ApiClass";
+import NavBar from "../NavBar";
 const Api = new ApiFetch();
 const { Meta } = Card;
 
@@ -18,7 +18,7 @@ export default function Personajes() {
   console.log(characters);
 
   return (
-    <div className="container">
+    <div>
       <NavBar />
       <h2>Personajes</h2>
       <br />
