@@ -11,7 +11,7 @@ export default function Personajes() {
 
   useEffect(() => {
     (async function fetchData() {
-      const response = await Api.getEpisodes(30);
+      const response = await Api.getCharacters(30);
       setCharacters(response);
     })();
   }, []);
@@ -25,7 +25,7 @@ export default function Personajes() {
       <div style={{ background: "#ECECEC", padding: "30px" }}>
         <Row gutter={16} align="middle">
           {characters.map((character, index) => (
-            <Col span={6}>
+            <Col span={6} key={index}>
               <Card
                 key={index}
                 style={{ width: 300 }}
