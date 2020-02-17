@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, Icon } from "antd";
+import { Menu } from "antd";
 
 export default function NavBar() {
   return (
