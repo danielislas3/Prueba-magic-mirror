@@ -57,7 +57,7 @@ export default function DetalleEpisode() {
           </Row>
         </div>
       </div>
-      <Row gutter={16} align="middle" style={{padding:30}}>
+      <Row gutter={16} align="middle" style={{ padding: 30 }}>
         <h2>Characters</h2>
         {characters.map((character, index) => (
           <Col span={6} key={index}>

@@ -15,7 +15,6 @@ export default function Personajes() {
       setCharacters(response);
     })();
   }, []);
-  console.log(characters);
 
   return (
     <div>

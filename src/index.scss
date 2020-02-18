@@ -53,3 +53,55 @@ code {
   border-radius: 20px;
   background-color: rgba(104, 53, 206, 0.911);
 }
+
+.box {
+  width: 450px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #34495e;
+  text-align: center;
+  box-shadow: 15px 15px #2c3e50;
+  
+  input[type="text"], input[type="password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 12px 10px;
+    width: 250px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    
+    &:focus {
+      width: 370px;
+      border-color: #1abc9c;
+    }
+  }
+  
+  input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    border: 2px solid #1abc9c;
+    padding: 12px 10px;
+    width: 100px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #1abc9c;
+    }
+  }
+}
